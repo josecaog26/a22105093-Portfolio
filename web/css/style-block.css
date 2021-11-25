@@ -1,10 +1,7 @@
 div.index{
-    background-image: url("/web/images/fondo.jpg");
     background-size: cover;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    overflow: hidden;
+    background-color: rgb(128, 218, 221);
+    min-height: 100%;
 }
 
 div.card{
@@ -15,6 +12,29 @@ div.card{
     background-color:transparent;
 }
 
+div.card2{
+    margin: 10px 50px 20px 50px;
+    font-size: 100%;
+    font-family: sans-serif;
+    border-color: black;
+    border:black 1px solid;
+    padding: 20px 20px 10px 20px;
+}
+
+div.card-foto{
+    margin: 20px 20px 20px 20px;
+    font-size: 100%;
+    font-family: sans-serif;
+    border-color: black;
+    border:black 1px solid;
+    padding: 20px 20px 0px 20px;
+    background-color: rgb(255, 255, 255);
+    max-width: 700px;
+    min-height: 500px;
+}
+
+
+
 #title {
     text-align: center;
     font-size: 350%;
@@ -22,4 +42,14 @@ div.card{
     color: #444444;
     font-family: sans-serif;
     margin-top: 20px;
+}
+
+#subtitle {
+    text-align: center;
+    font-size: 150%;
+    text-decoration: none;
+    color: #444444;
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }

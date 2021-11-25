@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Register</title>
+        <title>Contactame</title>
         <link rel="icon" href="images/favicon.ico" />
-        <link rel="stylesheet" href="css/style-photo-block.css" />
+        <link rel="stylesheet" href="css/style-block.css" />
 
         <meta name="viewport" content="width=device-width , initial-scale=1 , shrink-to-fit=no ">
         <link rel="stylesheet" href="/css/bootstrap.min.css ">
@@ -13,121 +13,88 @@
         <script src="/js/libs/popper.min.js "></script>
         <script src="/js/libs/bootstrap.min.js "></script>
         <script src="/js/utils/include.js"></script>
-        <script src="/js/register.js" type="module"></script>
         <script src= "/js/libs/axios.min.js"></script>
-        <script src= "/js/header.js" type= "module"></script>
+
 
     </head>
 
     <body>
-        <div id="errors"></div>
-        <div id="page-header"></div >
+        <div class="index">
+            <div id="page-header"></div >
 
-        <div class="title-block">
-            <h1 id="page-title"> Register a new user</h1 >
-        </div>
-        
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="card2" style="width: 70rem;">
-                    <form id="register-form">
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md">
-                                    <label for="firstname-input"> First name: </label>
-                                </div>
-                                <div class="col-md">
-                                    <input type="text" class="form-control" id="firstname-input" name="firstName" placeholder="First name">
-                                </div>
-                            
-                                <div class="col-md">
-                                    <label for="lastname-input"> Last name: </label>
-                                </div>
-                                <div class="col-md">
-                                    <input type="text" class="form-control" id="lastname-input" name="lastName" placeholder="Last name">
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md">
-                                    <label for="email-input"> Email: </label>
-                                </div>
-                                <div class="col-md">
-                                    <input type="text" class="form-control" id="email-input" name="email" placeholder="Email">
-                                </div>
-                    
-                                <div class="col-md">
-                                    <label for="telephone-input"> Telephone: </label>
-                                </div>
-                                <div class="col-md">
-                                    <input type="text" class="form-control" id="telephone-input" name="telephone" placeholder="Telephone">
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md">
-                                    <label for="validationCustomUsername" class="form-label">Username:</label>
-                                </div>
-                                <div class="col-md">
-                                    <div class="input-group has-validation">
-                                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                        <input type="text" class="form-control" id="username-input" 
-                                            name="username" placeholder="Username" aria-describedby="inputGroupPrepend">
-                                        <div class="invalid-feedback">
-                                          Please choose a username.
-                                        </div>
+                <h1 id="title"> Contacta conmigo</h1 >
+                <h2 id="subtitle">Rellena este formulario y me pondré en contacto contigo, gracias.</h2>
+            
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="card2" style="width: 70%;">
+                        <form id="form">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md">
+                                        <label for="firstname-input"> Nombre: </label>
+                                    </div>
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" id="firstname-input" name="firstName" placeholder="First name">
+                                    </div>
+                                
+                                    <div class="col-md">
+                                        <label for="lastname-input"> Apellidos: </label>
+                                    </div>
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" id="lastname-input" name="lastName" placeholder="Last name">
                                     </div>
                                 </div>
-                            
+                            </div>
                         
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md">
+                                        <label for="email-input"> Email: </label>
+                                    </div>
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" id="email-input" name="email" placeholder="Email">
+                                    </div>
                         
-                        
-                            
-                                <div class="col-md">
-                                    <label for="password-input"> Password: </label>
-                                </div>
-                                <div class="col-md">
-                                    <input type="password" class="form-control" id="password-input" name="password" placeholder="Password">
-                                </div>
-                            
-                        
-                   
-                        
-                            
-                                <div class="col-md">
-                                    <label for="password2-input"> Repeat your password: </label>
-                                </div>
-                                <div class="col-md">
-                                    <input type="password" class="form-control" id="password2-input" name="password2" placeholder="Repeat your password">
+                                    <div class="col-md">
+                                        <label for="telephone-input"> Telefono: </label>
+                                    </div>
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" id="telephone-input" name="telephone" placeholder="Telephone">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="url-input"> Url profile photo: </label>
-                            <input type="text" class="form-control" id="url-input" name="avatarUrl" placeholder="Url of the Photo">
-                        </div>
-                        <a href="login.html" style="color: black;"><u>If you are registed, CLICK HERE! to log in</u></a>
-                    
-                        <div class="margensuperior">
-                            <div class="col-md text-center">
-                                
-                                <input type="submit" class="btn btn-success" value="Send"></input> 
+                        
+                            <div class="form-group">
+                                <label for="url-input"> Si quieres mandarme algún archivo seleccionalo aqui: </label>
+                                <input type="file" class="form-control" id="file" name="avatarUrl" placeholder="Url of the Photo">
+                            </div>
+                            
+                        
+                            <div class="margensuperior">
+                                <div class="col-md text-center">
+                                    <button onclick="Contacto()" class="btn btn-success">Enviar</button>
+                                </div >
+                            </div>
+                        
+                        
+                        </form>
+                    </div>
                                        
-                            </div >
-                        </div>
-                    
-                    
-                    </form>
                 </div>
-                                   
+                
+                
             </div>
-            
-            
+
+            <h3 id="subtitle">Aqui tienes mi email: j.carlos.ortiz.gutierrez@gmail.com no dudes en contactar conmigo si necesitas mas información.</h3>
         </div>
+        
+
+        <script>
+        function Contacto(){
+            alert("Sus datos han sido enviados correctamente")
+        }
+        </script>
        
         <script >include("header.html", "#page-header") ;</script>
         

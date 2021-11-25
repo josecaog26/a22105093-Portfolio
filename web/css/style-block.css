@@ -1,0 +1,25 @@
+div.index{
+    background-image: url("/web/images/fondo.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+div.card{
+    margin: 20px 50px 20px 50px;
+    font-size: 100%;
+    font-family: sans-serif;
+    border-style: hidden;
+    background-color:transparent;
+}
+
+#title {
+    text-align: center;
+    font-size: 350%;
+    text-decoration: none;
+    color: #444444;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
